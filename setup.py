@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 from torch.utils.cpp_extension import BuildExtension, CppExtension, CUDAExtension
 
 extra_compile_args = {
-    "cxx": ["-std=c++11", "-O3", "-fopenmp"],
+    "cxx": ["-std=c++11", "-O3", "-lomp", "-Xpreprocessor", "-fopenmp"],
     "nvcc": ["-std=c++11", "-O3", "--compiler-options=-fopenmp"],
 }
 
