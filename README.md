@@ -83,6 +83,12 @@ CUDA support if this is available for PyTorch.
 pip install torch-baidu-ctc
 ```
 
+> 요만큼 추가
+```bash
+brew install libomp
+xcode-select --install
+```
+
 ### From GitHub
 
 ```bash
